@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.1/tippy-bundle.umd.min.js"
+        integrity="sha512-xULG5PJghLB+bsq9AuFbarjLtvtxDVjh47LlxXG25U2v3m+YB7OvNjA6m7pyampiwPVvrXv3Wupiv8oSX+5lRw=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.1/tippy.min.css"
+        integrity="sha512-cFrU9cXMuM9vFGp9UuvYm8mnhWWMIjD592Ry4lu4mv4NAHepZDfvrvD6KJq5g6+a02btseK7xxZASYLFfsSopw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="init.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="formula.js" defer></script>
+    <script src="newOpenSave.js" defer></script>
+    <script src="tippy.js" defer></script>
+    <link rel="icon" href="excel-logo.png" type="image/x-icon">
+    <title>EXCEL-MASTER</title>
+</head>
+
+<body>
+    <div class="name_container">
+        <input type="text" class="filename" placeholder="Untitled Spreadsheet">
+    </div>
+    <div class="menu_container">
+        <div class="logo-container">
+            <img src="excel-logo.png" class="logo">
+        </div>
+
+        <div class="formatting-container">
+            <div class="subgroup">
+                <select id="font-family" class="font-family">
+                    <option value="Arial">Arial</option>
+                    <option value="Cambria">Cambria</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="monospace">monospace</option>
+                    <option value="sans-serif">sans-serif</option>
+                    <option value="fantasy">fantasy</option>
+                </select>
+
+                <div class="BUI_container">
+                    <i class="fas fa-bold bold"></i>
+                    <!-- <input type="button" value="B" class="bold" /> -->
+                    <!-- <input type="button" value="I" class="italic" /> -->
+                    <i class="fas fa-italic italic"></i>
+                    <!-- <input type="button" value="U" class="underline" /> -->
+                    <i class="fas fa-underline underline"></i>
+                </div>
+            </div>
+            <div class="subgroup">
+
+                <select id="font-size" class="font-size">
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="16">16</option>
+                    <option value="20">20</option>
+                    <option value="32">32</option>
+                    <option value="32">64</option>
+
+                </select>
+
+                <div class="color-container">
+                    <input type="color" id="color"></input>
+                    <input type="color" id="bg-color">
+
+                </div>
+            </div>
+        </div>
+        <div class="alignment-container">
+            <i class="fas fa-align-left Left"></i>
+            <i class="fas fa-align-center Center"></i>
+            <i class="fas fa-align-right Right"></i>
+            <!-- <input type="button" value="L" class="Left" />
+            <input type="button" value="C" class="Center" />
+            <input type="button" value="R" class="Right" /> -->
+        </div>
+        <div class="nos-container">
+            <i class="fas fa-file-alt new"></i>
+            <i class="fas fa-file-upload open"></i>
+            <i class="fas fa-save save"></i>
+        </div>
+
+    </div>
+    <div class="formula_container">
+        <input type="text" class="address-box" readonly>
+        <div class="separator">:</div>
+        <img src="fx.png" class="fxlogo">
+        <input type="text" class="formula-box">
+    </div>
+    <div class="grid_container">
+        <div class="top-left-block"></div>
+        <div class="top-row"></div>
+        <div class="left-col"></div>
+        <div class="grid"></div>
+    </div>
+    <div class="sheets">
+        <div class="add-sheet_container">
+            <i class="fas fa-plus icon"></i>
+        </div>
+        <div class="sheets_list">
+            <div class="sheet active_sheet" SheetIdx="1">Sheet 1</div>
+        </div>
+    </div>
+</body>
+
+</html>
